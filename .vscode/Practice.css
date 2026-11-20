@@ -1,0 +1,52 @@
+.container{
+    display: grid;
+    grid-template-areas:
+        "header     header"
+        "navigation navigation"
+        "content    sidebar"
+        "footer     footer";
+    grid-template-columns: 65fr 35fr;
+    grid-template-rows: 100px 80px 250px 100px;
+    gap: 5px;
+}
+.header{
+    grid-area: header;
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
+}
+.navigation{
+    grid-area: navigation;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 15px;
+}
+.content{
+    grid-area: content;
+    background-color: beige;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+.product{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+}
+.footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #355dae;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 2px solid #055ce9;
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    color: #0710bb;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.brand-name {
+    color: #113095;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.title-section {
+    margin-left: 10px;
+}
+
+.title-section h2 {
+    color: #8a14eb;
+    font-size: 40px;
+}
+
+.title-section p {
+    color: #1512ba;
+    font-size: 22px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #13a02d;
+    font-size: 20px;
+}
+
+.status .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #13a02d;
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+}
+
+.dispatch-btn {
+    background-color: #13a02d;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}

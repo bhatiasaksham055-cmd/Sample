@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-areas:
+        "header  header  header"
+        "sidebar   content content"
+        "footer  footer  footer";
+
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 50px 200px 50px;
+
+    gap: 5px;
+    
+}
+
+.header{
+    grid-area: header;
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightgreen;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.content{
+    grid-area: content;
+    background-color: beige;
+    text-align: center;
+    padding: 15px;
+   
+}
+.footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+   
+}
+#submitbtn{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#submitbtn:hover{
+    background-color: red;
+    transform:scale(1.5);
+    transition: transform background-color 0.3s ease;
+}

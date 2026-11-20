@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Activity Portal</title>
+</head>
+<body>
+  <header>
+    <h1>Student Activity Portal</h1>
+    <nav><a href="#events">Events</a> <a href="#activities">Activities</a> <a href="#register">Register</a></nav>
+  </header>
+  <main>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+    </section>
+    <section id="activities">
+      <h2>University Activities</h2>
+      <ul><li>Coding Club</li><li>Music Club</li><li>Volunteering</li></ul>
+    </section>
+    <section id="register">
+      <h2>Event Registration</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label><input type="text" id="name" required>
+        <label for="email">Email</label><input type="email" id="email" required>
+        <label for="dept">Department</label>
+        <select id="dept" required><option value="">-- Select --</option><option>Computer Science</option><option>Mechanical</option><option>Management</option></select>
+        <p><b>Participation Type</b></p>
+        <input type="radio" id="ind" name="type" required><label for="ind">Individual</label>
+        <input type="radio" id="team" name="type"><label for="team">Team</label>
+        <p><b>Interests</b></p>
+        <input type="checkbox" id="tech"><label for="tech">Technology</label>
+        <input type="checkbox" id="sports"><label for="sports">Sports</label>
+        <label for="msg">Comments</label><textarea id="msg" rows="4"></textarea>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <aside><h2>Announcements</h2><p>Tech Fest registration.</p></aside>
+  </main>
+ 
+</body>
+</html>

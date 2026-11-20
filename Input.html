@@ -1,0 +1,66 @@
+<html>
+   <head>
+        <link rel="stylesheet" href="Input.css"></head>
+    <style>
+        body{
+            background-color:rgb(230, 230, 234);
+            background-image:none;
+           
+        }h1{
+            color: rgb(23, 7, 7);
+            text-align: center;
+        }
+    </style>
+     <body>
+        <h1 >Registration Form</h1>
+        <form>
+            <table>
+            <tr>
+
+        <td><label class="uname label">Enter User Name:</label> </td>
+        <td><input type="text" name="uname"></td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><label>Enter Father Name:</label></td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+            </table>
+        <label>Enter Mother Name:</label> <input type="text" name="mname"><br><br>
+        <label>Enter Mobile Number:</label><input type="text" name="mnumber"><br><br>
+        <label style="color: blue;">Enter Email:</label><input type="text" name="email"><br><br>
+        <label style="color: blue;">Enter Address:</label><textarea name="address" rows="5" cols="20"></textarea><br><br>
+        <label style="color: blue;">Enter Your Gender:</label><br><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+        <label>Select Your hobbies: </label>
+        <input type="checkbox" name="hobbies" value="reading"> Reading
+        <input type="checkbox" name="hobbies" value="writing"> Writing
+        <input type="checkbox" name="hobbies" value="swimming"> Swimming<br><br>
+        <label>Select Your Country:</label>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+
+        </select><br><br>
+        <label>Select Your State:</label>
+        <select name="state">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="punjab">Punjab</option>
+            <option value="assam">Assam</option>
+        </select>
+        <br><br>
+       <label style="color:aquamarine">Enter Your Password:</label>
+       <input type="password" name="password"><br><br>
+       <label> Enter Date of Birth:</label>
+       <input type="date" name="dob"><br><br>
+       <input type="submit" value="Submit">
+       <input type="reset" value="Reset">
+
+    </form>    </body>
+</html>

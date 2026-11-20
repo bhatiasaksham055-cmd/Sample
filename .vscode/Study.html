@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyPortal</title>
+  <link rel="stylesheet" href="Study.css">
+</head>
+<body>
+
+  <!-- Left menu -->
+  <aside class="sidebar">
+    <div class="logo"><span>P</span>StudyPortal</div>
+
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">My Courses</a>
+    <a href="#">Schedule</a>
+    <a href="#">Resources</a>
+    <a href="#">College Prep</a>
+    <a href="#">Settings</a>
+
+    <div class="help-box">
+      <b>Need Help?</b>
+      <p>Connect with a tutor anytime for personalized help.</p>
+      <button>Chat with Tutor</button>
+    </div>
+  </aside>
+
+  <div class="content">
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <input type="text" placeholder="Search courses, resources, tasks...">
+      <div class="profile">
+        <div><b>Alex Rivera</b><br><small>Grade 11 Student</small></div>
+        <div class="avatar"></div>
+      </div>
+    </header>
+
+    <div class="page">
+
+      <!-- Main column -->
+      <main class="main">
+
+        <section class="hero">
+          <div class="hero-text">
+            <span class="badge">Welcome back, Alex!</span>
+            <h1>Ready to ace your next exams?</h1>
+            <p>You've completed 75% of your Calculus prep. Keep up the momentum! Your exam is in 3 days.</p>
+            <button class="white">Continue Learning</button>
+            <button>View Schedule</button>
+          </div>
+          <div class="hero-img"></div>
+        </section>
+
+        <h2>Active Courses</h2>
+        <section class="course-grid">
+
+          <div class="course" style="--color: var(--blue)">
+            <div class="course-top">AP Calculus BC <span>75%</span></div>
+            <p class="teacher">Dr. Sarah Chen</p>
+            <div class="bar"><div style="width:75%"></div></div>
+            <div class="course-bottom"><span>2h left today</span><b>Continue →</b></div>
+          </div>
+
+          <div class="course" style="--color: var(--orange)">
+            <div class="course-top">World History <span>42%</span></div>
+            <p class="teacher">Mr. James Wilson</p>
+            <div class="bar"><div style="width:42%"></div></div>
+            <div class="course-bottom"><span>2h left today</span><b>Continue →</b></div>
+          </div>
+
+          <div class="course" style="--color: var(--green)">
+            <div class="course-top">Physics II <span>90%</span></div>
+            <p class="teacher">Prof. Mark Davis</p>
+            <div class="bar"><div style="width:90%"></div></div>
+            <div class="course-bottom"><span>2h left today</span><b>Continue →</b></div>
+          </div>
+
+          <div class="course" style="--color: var(--red)">
+            <div class="course-top">Literature &amp; Comp <span>58%</span></div>
+            <p class="teacher">Ms. Emily Parker</p>
+            <div class="bar"><div style="width:58%"></div></div>
+            <div class="course-bottom"><span>2h left today</span><b>Continue →</b></div>
+          </div>
+
+        </section>
+
+        <h2>College Roadmap</h2>
+        <div class="roadmap"></div>
+      </main>
+
+      <!-- Right column -->
+      <aside class="side">
+        <h2 style="margin-top:0">Upcoming Tasks</h2>
+
+        <div class="task" style="--color: var(--red)">
+          <b>Calc Assignment</b><br><small>Tomorrow, 11:59 PM</small>
+        </div>
+        <div class="task" style="--color: var(--orange)">
+          <b>Physics Lab Report</b><br><small>Thu, Jan 28</small>
+        </div>
+        <div class="task" style="--color: var(--grey)">
+          <b>History Essay</b><br><small>Fri, Jan 29</small>
+        </div>
+        <div class="add-task">+ Add New Task</div>
+
+        <div class="streak">
+          Study Streak
+          <b>12</b>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</body>
+</html>

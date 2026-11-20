@@ -1,0 +1,21 @@
+      .flex container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .flex-item {
+            background-color: #f2f2f2;
+            width: 100px;
+            margin: 10px;
+            border: 1px solid #cccc;
+            text-align:center;
+            grid-gap: 10px;
+        }
+        .container div{
+            background-color: #5b57d4;
+            padding: 20px;
+            text-align: center;
+            text-color: white;
+
+        }
+    

@@ -1,0 +1,142 @@
+
+:root {
+  --dark: #0f172a;
+  --grey: #64748b;
+  --border: #e2e8f0;
+  --page: #f8fafc;
+  --blue: #3b82f6;
+  --orange: #f59e0b;
+  --green: #10b981;
+  --red: #ef4444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--page);
+  color: var(--dark);
+  display: flex;
+}
+
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid var(--border);
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+}
+.logo { font-size: 18px; font-weight: bold; margin: 0 10px 28px; }
+.logo span {
+  background: var(--dark); color: white;
+  padding: 5px 10px; border-radius: 8px; margin-right: 8px;
+}
+.sidebar a {
+  display: block; padding: 11px 14px; margin-bottom: 4px;
+  border-radius: 10px; color: var(--grey);
+  text-decoration: none; font-size: 14px;
+}
+.sidebar a:hover { background: #f1f5f9; }
+.sidebar a.active { background: var(--dark); color: white; }
+
+.help-box { margin-top: auto; background: #f1f5f9; padding: 14px; border-radius: 12px; }
+.help-box p { font-size: 12px; color: var(--grey); margin: 4px 0 10px; }
+.help-box button {
+  width: 100%; padding: 9px; border: none; border-radius: 8px;
+  background: var(--dark); color: white; cursor: pointer;
+}
+
+
+.content { flex: 1; }
+
+.topbar {
+  height: 64px; background: white; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 28px;
+}
+.topbar input {
+  width: 380px; padding: 10px 14px; border: none;
+  background: #f1f5f9; border-radius: 10px;
+}
+.profile { display: flex; align-items: center; gap: 12px; text-align: right; font-size: 13px; }
+.profile small { color: var(--grey); }
+.avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #fb923c, #f43f5e); }
+
+
+.page {
+  display: flex; gap: 28px; padding: 28px;
+}
+.main { flex: 1; }
+.side { width: 290px; }
+
+h2 { font-size: 20px; margin: 28px 0 14px; }
+
+
+.hero {
+  display: flex; overflow: hidden; border-radius: 20px;
+  background: linear-gradient(120deg, #0b1224 55%, #1e3a8a);
+  color: white; min-height: 290px;
+}
+.hero-text { flex: 1; padding: 44px 40px; }
+.badge {
+  font-size: 11px; padding: 5px 10px; border-radius: 6px;
+  background: rgba(255,255,255,.12);
+}
+.hero h1 { font-size: 42px; margin: 20px 0 14px; line-height: 1.1; }
+.hero p { color: #cbd5e1; line-height: 1.6; margin-bottom: 24px; }
+.hero button {
+  padding: 12px 20px; border-radius: 8px; font-weight: 600; cursor: pointer;
+  border: 1px solid rgba(255,255,255,.3); background: none; color: white; margin-right: 10px;
+}
+.hero button.white { background: #f1f5f9; color: var(--dark); }
+
+.hero-img {
+  width: 38%;
+  background:
+    radial-gradient(circle at 45% 55%, #c026d3, #4f46e5 30%, #0ea5e9 55%, transparent 70%),
+    linear-gradient(135deg, #cbd5e1, #64748b);
+}
+
+
+.course-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.course {
+  background: white; padding: 22px; border-radius: 14px;
+  border-top: 6px solid var(--color);
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+.course-top { display: flex; justify-content: space-between; font-weight: bold; }
+.course-top span { background: #f1f5f9; padding: 3px 9px; border-radius: 6px; font-size: 12px; color: var(--grey); }
+.teacher { color: var(--grey); font-size: 13px; margin: 8px 0 18px; }
+.bar { height: 5px; background: var(--border); border-radius: 5px; margin-bottom: 12px; }
+.bar div { height: 100%; background: var(--dark); border-radius: 5px; }
+.course-bottom { display: flex; justify-content: space-between; font-size: 12px; color: var(--grey); }
+
+.roadmap { height: 100px; background: linear-gradient(90deg, white 70%, #e0e7ff); border: 1px solid var(--border); border-radius: 14px; }
+
+
+.task {
+  background: white; padding: 14px 16px; margin-bottom: 14px; border-radius: 10px;
+  border: 1px solid var(--border); border-left: 4px solid var(--color);
+}
+.task small { color: var(--grey); }
+.add-task {
+  text-align: center; padding: 12px; color: var(--grey); font-size: 13px;
+  border: 1px dashed #cbd5e1; border-radius: 10px;
+}
+.streak {
+  background: var(--dark); color: white; padding: 24px;
+  border-radius: 16px; margin-top: 24px;
+}
+.streak b { display: block; font-size: 60px; margin-top: 10px; }
+
+
+@media (max-width: 1000px) {
+  body, .page { flex-direction: column; }
+  .sidebar { width: 100%; min-height: auto; }
+  .side { width: 100%; }
+  .hero-img { display: none; }
+  .course-grid { grid-template-columns: 1fr; }
+}
