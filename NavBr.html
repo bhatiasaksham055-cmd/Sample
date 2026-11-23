@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETRA</title>
-    <link rel="stylesheet" href="NavBr.css">
+   <meta charset="UTF-8">
+   <meta name="viewpoint" content="width-device-width, initail-scale=1.0">
+   <title>NETRA</title>
+   <link rel="stylesheet" href="NavBr.css">
 </head>
 <body>
     <header class="navbar">
-<div class="brand-section">
-    <div class="logo">N</div>
-    <h1 class="brand-name">NETRA</h1>
-</div>
-<div class="title-section">
-    <h2>-Mission Control</h2>
-    <p> Smart Rover Fleet.Intelligent Campus.</p>
-</div>
-<div class="right-section">
-    <span class="staus-dot"></span>
-    <span>Live-Simulated Telemetry</span>
-</div>
+        <!--Left Section:Logo and Branding-->
+        <div class="brand-section">
+             <div class="logo">N</div>
+        <h1 class="brand-name" style="color: lightskyblue;">NETRA</h1>
+        </div>
+       
+   
+    <!--Middle Section:Title and Subtitle-->
+    <div class="title-section">
+        <h2 style="color: beige;">-Mission Control</h2>
+        <p style="color: beige;">Smart Rover Fleet.Intelligent Campus</p>
+    </div>
 
-<button class="dispatch-btn">
-    Dispatch Mission
-</button>
+    <!--Right Section: Status and Button-->
+    <div class="right-section">
+        <div class="status">
+            <span class="status-dot"></span>
+            <span style="color: chartreuse;">Live-Simulated Telemetry</span>
+        </div>
+   
+
+    <button class="dispacth-btn">
+        Dispacth Mission
+    </button>
+     </div>
+        
     </header>
+    <main class="page">
 
+    <section class="kpi-grid">
+        <article class="kpi-card">
+            <span>ROVER ONLINE</span>
+            <h2 id="online-count">6 / 6</h2>
+            <p style="color: black;">Active rover unit</p>
+        </article>
+        <!--three more cards,same shape-->
+
+         <article class="kpi-card">
+            <span>AVERAGE BATTERY</span>
+            <h2 id="battery-level">76%</h2>
+            <p style="color: black;">Overall battery status</p>
+        </article>
+
+         <article class="kpi-card">
+            <span>OPEN ALERTS</span>
+            <h2 id="open-alert">0</h2>
+            <p style="color: black;">Active alert and warnings</p>
+        </article>
+
+         <article class="kpi-card">
+            <span>Distance today</span>
+            <h2 id="distance-toady">1km</h2>
+            <p style="color: black;">Total distance covered </p>
+        </article>
+    </section>
+</main>
+
+     
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Hospital</title>
+</head>
+<body>
+  <a href="#main"></a>
+  <header>
+    <h1>City Hospital</h1>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointment">Book Appointment</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul><li>Emergency Care</li><li>Cardiology</li><li>Pediatrics</li></ul>
+    </section>
+    <section id="doctors">
+      <h2>Our Doctors</h2>
+      <article><h3>Dr. Asha Rao</h3><p>Cardiologist</p></article>
+      <article><h3>Dr. Ravi Shah</h3><p>Pediatrician</p></article>
+    </section>
+    <section id="appointment">
+      <h2>Book an Appointment</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label> <input type="text" id="name" name="name" autocomplete="name" required><br>
+        <label for="email">Email</label> <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone (10 digits)</label> <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+        <label for="date">Appointment Date</label> <input type="date" id="date" name="date" required><br>
+        <label for="dept">Department</label> <select id="dept" name="dept" required><option value="">-- Select --</option><option>Cardiology</option><option>Pediatrics</option></select><br>
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>2026 City Hospital</p></footer>
+</body>
+</html>

@@ -1,82 +1,99 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.navbar {
-    background-color: #355dae;
+.navbar{
+    display:flex;
+    background-color: #000000;
     height: 125px;
-    display: flex;
     align-items: center;
     padding: 0 30px;
-    border-bottom: 2px solid #055ce9;
+    border-bottom: 2px solid #ccc;
 }
 
-.brand-section {
+.brand-section{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.logo {
-    color: #0710bb;
+.logo{
+    color: deepskyblue;
     font-size: 80px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
-
-.brand-name {
-    color: #113095;
+.brand-name{
+    color: lightskyblue;
     font-size: 55px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: 'Arail', sans-serif
 }
 
-.title-section {
-    margin-left: 10px;
+.title-section{
+    margin-left: 40px;
 }
 
-.title-section h2 {
-    color: #8a14eb;
+.title-section h2{
+    color: beige;
     font-size: 40px;
 }
-
-.title-section p {
-    color: #1512ba;
+.title-section p{
+    color: beige;
     font-size: 22px;
 }
 
-.right-section {
+.right-section{
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 30px;
 }
 
-.status {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #13a02d;
+.status{
+    color: #162be9;
     font-size: 20px;
 }
 
-.status .dot {
-    height: 15px;
+.status-dot{
+    display: inline-block;
+    background-color: chartreuse;
     width: 15px;
-    background-color: #13a02d;
+    height: 15px;
     border-radius: 50%;
-    display: block;
-    flex-shrink: 0;
-}
 
-.dispatch-btn {
-    background-color: #13a02d;
-    color: white;
-    border: none;
-    padding: 5px 15px;
-    font-size: 10px;
+}
+.dispacth-btn{
+    background-color: rgb(38, 212, 26);
+    color: beige;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 12px;
     cursor: pointer;
-    border-radius: 6px;
+
+}
+.page{
+    padding: 35px 5%;
+}
+.page p{
+    color: #d0c3f3
+}
+.kpi-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.kpi-card, .panel{
+    background: rgb(157, 157, 250);
+    border: 1px solid  rgb(38, 38, 135);
+    border-radius: 12px;
+}
+.kpi-card{
+    padding: 22px;
+    transition: 0.3s;
+}
+.kpi-card:hover{
+    border-color: rgb(255, 3, 3);
+    transform: translateY(-3px);
 }
